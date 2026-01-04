@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AVL Tree Algorithms</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="avl.html">AVL Visualization</a>
+  <a href="theory.html">Theory</a>
+  <a href="algorithm.html">Algorithm</a>
+  <a href="about.html">About</a>
+</nav>
+
+<section class="container fade-in">
+<h1>AVL Tree Algorithms</h1>
+
+<h2 class="algorithm-heading">Insertion Algorithm</h2>
+<ol>
+<li>Insert node like in a Binary Search Tree</li>
+<li>Update heights of ancestor nodes</li>
+<li>Check balance factor</li>
+<li>If unbalanced, perform appropriate rotation (LL, RR, LR, RL)</li>
+</ol>
+
+<h2 class="algorithm-heading">Deletion Algorithm</h2>
+<ol>
+<li>Delete node like in BST</li>
+<li>Update heights</li>
+<li>Check balance factor</li>
+<li>If unbalanced, perform rotation (LL, RR, LR, RL)</li>
+</ol>
+
+<h2 class="algorithm-heading">Time Complexity</h2>
+<table style="margin:auto;">
+<tr><th>Operation</th><th>Time Complexity</th></tr>
+<tr><td>Search</td><td>O(log n)</td></tr>
+<tr><td>Insert</td><td>O(log n)</td></tr>
+<tr><td>Delete</td><td>O(log n)</td></tr>
+</table>
+
+</section>
+</body>
+</html>

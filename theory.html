@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AVL Tree Theory</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="avl.html">AVL Visualization</a>
+  <a href="theory.html">Theory</a>
+  <a href="algorithm.html">Algorithm</a>
+  <a href="about.html">About</a>
+</nav>
+
+<section class="container fade-in">
+<h1>AVL Tree Theory</h1>
+
+<h2>Introduction</h2>
+<p>
+An <strong>AVL Tree</strong> is a self-balancing Binary Search Tree. 
+In an AVL Tree, the height difference between left and right subtrees of any node 
+is at most 1. This ensures operations like search, insertion, and deletion run in O(log n) time.
+</p>
+
+<h2>Need for AVL Tree</h2>
+<ul>
+<li>Normal BST can become skewed depending on insertion order</li>
+<li>Skewed BST leads to inefficient search (O(n))</li>
+<li>AVL Trees maintain balance automatically to prevent skewed structures</li>
+</ul>
+
+<h2>Balance Factor</h2>
+<p>
+Balance Factor = Height(left subtree) − Height(right subtree)
+</p>
+
+<table style="margin:auto;">
+<tr><th>Balance Factor</th><th>Status</th></tr>
+<tr><td>-1, 0, +1</td><td>Balanced</td></tr>
+<tr><td>&lt;-1 or &gt;1</td><td>Unbalanced</td></tr>
+</table>
+
+<h2>Rotations in AVL Trees</h2>
+<ul>
+<li><strong>LL Rotation</strong> – Left-Left imbalance</li>
+<li><strong>RR Rotation</strong> – Right-Right imbalance</li>
+<li><strong>LR Rotation</strong> – Left-Right imbalance</li>
+<li><strong>RL Rotation</strong> – Right-Left imbalance</li>
+</ul>
+
+</section>
+</body>
+</html>
